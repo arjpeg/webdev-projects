@@ -1,0 +1,42 @@
+body {
+    position: relative;
+}
+
+button {
+    position: relative;
+}
+
+#piano {
+    position: relative;
+}
+
+#white-keys {
+    display: flex;
+    gap: 1px;
+    position: absolute;
+}
+
+#black-keys {
+    display: flex;
+    gap: 17px;
+    position: absolute;
+    left: 26px;
+}
+
+#white-keys>key {
+    width: 30px;
+    border-style: solid;
+    height: 95px;
+}
+
+#black-keys>key {
+    width: 20px;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+}
+
+#black-keys>empty { 
+    /* Just to make it easier to model the keys */ 
+    width: 20px;
+    min-width: 20px;
+}

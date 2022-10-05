@@ -1,0 +1,54 @@
+:root {
+    --bg-primary: #eee;
+    --bg-secondary: #587792;
+    --text-primary: #001514;
+}
+
+body {
+    background-color: var(--bg-primary);
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Poppins';
+}
+
+#primary-bg {
+    background-color: var(--bg-secondary);
+}
+
+#primary-navbar {
+    width: 70%;
+    margin: auto;
+    height: 160px;
+}
+
+#navbar-links {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    padding-top: 5px;
+}
+
+#navbar-tabs {
+    height: 80%;
+}
+
+#logo {
+    max-height: 90%;
+}
+
+#navbar-tabs {
+    display: flex;
+    flex-flow: row;
+}
+
+.navlink {
+    text-decoration: none;
+    color: var(--bg-primary);
+
+    margin-right: 20px;
+}
+
+.tab {
+    font-weight: 400;
+}

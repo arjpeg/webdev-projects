@@ -1,0 +1,83 @@
+:root {
+    --accent-color: rgb(178, 46, 46);
+    --main-color: #eee;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Poppins';
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#header {
+    background-image: url(https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg);
+    color: var(--main-color);
+
+    height: 250px;
+}
+
+#header h1 {
+    text-align: center;
+    line-height: 125px;
+}
+
+#navbar {
+    display: flex;
+
+    flex-flow: row-reverse nowrap;
+}
+
+#content {
+    display: flex;
+}
+
+#text {
+    flex: 1;
+    font-size: 16px;
+}
+
+img {
+    flex: 1;
+
+    max-width: 25%;
+    height: auto;
+}
+
+.nav-item {
+    color: inherit;
+    text-decoration: inherit;
+
+    font-size: 18px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

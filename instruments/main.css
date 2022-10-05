@@ -1,0 +1,49 @@
+@keyframes fadetext {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+body {
+    font-family: "Roboto";
+
+    animation-name: fadetext;
+    animation-duration: 1s;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#instruments {
+    display: flex;
+    flex-flow: row nowrap;
+
+    width: 70%;
+
+    border-style: solid;
+    margin: 0 auto;
+}
+
+.instrument {
+    flex: 1;
+
+    border-style: double;
+    border-color: red;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+
+    margin: auto;
+    display: block;
+}

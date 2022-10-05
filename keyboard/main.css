@@ -1,0 +1,42 @@
+body {
+    font-family: roboto;
+}
+
+#keyboard {
+    width: 60%;
+    min-height: 400px;
+
+    /* border-style: solid; */
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.key-row {
+    display: flex;
+
+    /* border-style: solid; */
+    /* border-color: blue; */
+
+    /* width: 100%; */
+    min-height: 80px;
+    flex-wrap: nowrap;
+}
+
+.key {
+    font-size: 20px;
+
+    border-style: solid;
+    border-color: rgb(55, 49, 47);
+
+    /* text-align: center; */
+    padding-top: 25px;
+    padding-left: 20px;
+
+    color: rgb(255, 252, 242);
+    background-color: rgb(10, 9, 8);
+}
+
+.flex-1 {
+    flex: 1;
+}

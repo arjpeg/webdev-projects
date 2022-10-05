@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+body {
+    background-color: #EEE;
+    font-family: 'Poppins';
+}
+
+.buttons {
+    aspect-ratio: 1 / 1;
+    width: 30%;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.button-row {
+    display: flex;
+    flex: 1;
+}
+
+.button {
+    aspect-ratio: 1 / 1;
+    padding: 3px;
+    flex: 1;
+
+    border-radius: 5px;
+    border-style: solid;
+    margin: 2px;
+}
+
+.deactive {
+    background-color: #EEE;
+}
+
+.active {
+    background-color: rgb(117, 208, 37);
+}

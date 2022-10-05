@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Instruments!</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <h1>My Favorite Instruments</h1>
+
+    <!-- This week, Aditya should work on having some cells containing his favorite instruments, and when hovered over, some text contains a brief description/fact about the instrument should pop up below the box. He can have the boxes do other effects as well if he wants.  -->
+
+    <div id="instruments">
+        <div onmouseenter="showDescription('flute')" class="instrument">
+            <h2>The Flute</h2>
+
+            <img src="https://cdn.pixabay.com/photo/2012/04/13/11/33/flute-31994_960_720.png"
+                alt="A picture of a flute">
+        </div>
+
+        <div onmouseenter="showDescription('piano')" class="instrument">
+            <h2>The Piano</h2>
+
+            <img src="https://musicgalleryclearwater.com/wp-content/uploads/2015/09/Steinway-Grand-Piano-Model-B.png"
+                alt="A picture of a piano">
+        </div>
+    </div>
+
+    <div style="width: 50%; margin: 0 auto;">
+        <p id="description" style="text-align: center; margin-top: 30px;">
+            Hover over any instrument to get information about it!
+        </p>
+    </div>
+
+</body>
+
+</html>
