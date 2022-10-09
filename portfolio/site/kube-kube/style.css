@@ -1,0 +1,32 @@
+body {
+    background-color: #EEE;
+    font-family: Poppins;
+}
+
+h1 {
+    text-align: center;
+}
+
+#cubes {
+    display: flex;
+    flex-flow: column nowrap;
+
+    aspect-ratio: 1 / 1;
+    width: 25%;
+
+    border: solid;
+}
+
+.cube-row {
+    display: flex;
+    flex-flow: row nowrap;
+
+    flex: 1;
+}
+
+.cube {
+    flex: 1;
+    margin: 1px;
+
+    aspect-ratio: 1/1;
+}

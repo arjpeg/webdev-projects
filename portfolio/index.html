@@ -5,30 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Portfolio</title>
 
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="./css/home.css">
+    <title>My Portfolio</title>
 </head>
 
 <body>
-
     <div id="header">
         <div id="navbar">
-            <a class="nav-item hover-underline-animation" href="/index.html">Home</a>
+            <div class="navlink hover-underline-animation">
+                <a href="./html-tags.html">HTML Tags</a>
+            </div>
+            <div class="navlink hover-underline-animation">
+                <a href="./projects.html">Projects</a>
+            </div>
+            <div class="navlink hover-underline-animation">
+                <a href="./index.html">Home</a>
+            </div>
         </div>
-        <h1>Aditya Rao's Coding Portfolio</h1>
+        <h1>
+            Aditya Rao Udupi's Coding Portfolio
+        </h1>
     </div>
 
-    <main id="content">
-        <p id="text">Welcome to my digital portfolio. I have been programming for around 3 years now, starting with Khan
-            Academy. I am currently learning all about Java and am interested in expanding my skills with this course.
-            Some of my works are featured here in this portfolio.
-        </p>
-
-        <img src="https://gulfbusiness.com/wp-content/uploads/2021/08/GettyImages-1069786222.jpg" alt="Image of code">
+    <main>
+        <div style="flex: 1;">
+            Welcome to my digital portfolio. I have been programming for around 3 years now, starting with Khan Academy.
+            I am currently learning all about Java and am interested in expanding my skills with this course. Some of my
+            works are featured here in this portfolio.
+        </div>
+        <div style="flex: 1;">
+            <img src="./image/java.png" alt="Image of the Java programming language">
+        </div>
     </main>
-
 </body>
 
 </html>

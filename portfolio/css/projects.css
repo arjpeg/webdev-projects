@@ -1,0 +1,49 @@
+@import url('base.css');
+
+
+main {
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.project-type {
+    width: 95%;
+
+    border: solid;
+    text-align: center;
+
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 15px;
+
+    background-color: var(--background-secondary);
+
+    margin-top: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.inner-project {
+    flex: 1;
+    padding: 10px;
+
+    background-color: #DCE1E9;
+
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.project-pic {
+    width: 60%;
+    height: auto;
+}

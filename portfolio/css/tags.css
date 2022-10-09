@@ -1,0 +1,67 @@
+@import url('base.css');
+
+main {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+
+    text-align: center;
+
+    background-color: rgb(232, 231, 231);
+
+    border-radius: 30px;
+    border-color: transparent;
+
+    margin-top: 30px;
+}
+
+#outer-tag-box {
+    margin-top: 70px;
+    border: solid rgb(17, 17, 17) 2px;
+    border-radius: 10px;
+
+    width: 90%;
+    height: 400px;
+
+    margin: auto;
+}
+
+#tags-navbar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    height: 10%;
+    background-color: #eee;
+
+    border: solid transparent;
+    border-radius: 10px;
+}
+
+#tag-content {
+    height: 90%;
+}
+
+#tag-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    width: 10%;
+    border-color: transparent;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.tag:hover {
+    color: #0275d8;
+}
+
+.tag-selected {
+    background-color: #5cb85c;
+    color: white !important;
+}

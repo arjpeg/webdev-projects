@@ -1,0 +1,90 @@
+:root {
+    --background-primary: #eee;
+    --background-secondary: rgb(228, 228, 228);
+    --accent-color: #c60d0d;
+}
+
+body {
+    font-family: "Poppins";
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: var(--background-primary);
+}
+
+body::after {
+    content: "© Aditya Rao Udupi 2022";
+
+    font-size: 14px;
+    opacity: 70%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+
+    background-color: var(--background-secondary);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+#header h1 {
+    text-align: center;
+}
+
+#header {
+    background-image: url('https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg');
+    color: #EEE;
+
+    width: 100%;
+    height: 275px;
+}
+
+#navbar {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.navlink {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    font-size: 18px;
+}
+
+
+
+/* Animations */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}

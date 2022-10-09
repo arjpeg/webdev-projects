@@ -1,0 +1,28 @@
+@import url('base.css');
+
+main {
+    margin-top: 10px;
+    text-align: center;
+
+    display: flex; 
+    flex-flow: row;
+
+    padding: 2px;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 250px;
+
+    border-radius: 40px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+
+    background-color: rgb(228, 228, 228);
+}
+
+
+
+h1 {
+    line-height: 137.5px;
+}
